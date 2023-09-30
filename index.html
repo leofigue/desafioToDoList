@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío - Todo List</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <section>
+        <div class="tareas">
+            <div class="tareas__ingreso">
+                <div class="tareas__ingreso__titulo">
+                    <img src="./assets/img/to-do.gif" style="background-color: white;"><h1>TO DO LIST</h1>
+                </div>
+                
+                <hr>
+                <label for="nuevaTarea" class="colorTexto">Nueva tarea</label><br>
+                <input type="text" id="nuevaTarea">
+                <button id="btnAgregar">Agregar</button>
+            </div>
+            
+            <div class="tareas__detalle">
+                <div class="detalle__lista">
+                    <table id="tblTareas"  >
+                        <thead>
+                            <th>ID</th>
+                            <th>TAREA</th>
+                            <th>ESTADO</th>
+                            <th>ELIMINAR</th>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4">
+                                    <p class="totales">Cantidad de tareas:</span></p>
+                                    <p>Asignadas: <span id="total" class="totales"></span></p>
+                                    <p>Realizadas: <span id="realizadas" class="totales"></span> </p>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- sctipt JS -->
+    <script src="./assets/js/script.js" ></script>
+    
+</body>
+</html>
